@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 
 import logo from '../assets/Avatar.png';
+import { color } from '../constants/css';
 
 import { Fraunces_600SemiBold } from '@expo-google-fonts/fraunces';
 import { Roboto_500Medium } from '@expo-google-fonts/roboto';
@@ -25,10 +26,7 @@ export const Home = ({ navigation }) => {
                 By clicking Start conversation you agree to our
                 <Text style={styles.termsGreen}> Terms & Service</Text>
             </Text>
-            <TouchableOpacity
-                style={styles.button}
-                onPress={() => navigation.navigate('Start')}
-            >
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Start')}>
                 <Text style={styles.buttonText}>start session</Text>
             </TouchableOpacity>
         </View>
@@ -38,13 +36,12 @@ export const Home = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#F5F0ED',
+        backgroundColor: color.lightGrey,
     },
     title: {
-        color: '#1E2220',
+        color: color.black,
         textAlign: 'center',
         fontSize: 32,
         fontStyle: 'normal',
@@ -53,7 +50,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Fraunces_600SemiBold',
     },
     subtitle: {
-        color: '#66BA24',
+        color: color.lightGreen,
         textAlign: 'center',
         fontSize: 32,
         fontStyle: 'normal',
@@ -65,7 +62,7 @@ const styles = StyleSheet.create({
         height: 400,
     },
     terms: {
-        color: '#1E2220',
+        color: color.black,
         textAlign: 'center',
         fontSize: 14,
         fontStyle: 'normal',
@@ -75,7 +72,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Roboto_500Medium',
     },
     termsGreen: {
-        color: '#66BA24',
+        color: color.lightGreen,
         textAlign: 'center',
         fontSize: 14,
         fontStyle: 'normal',
@@ -91,11 +88,11 @@ const styles = StyleSheet.create({
         paddingHorizontal: 56,
         paddingVertical: 22,
         borderRadius: 40,
-        backgroundColor: '#115430',
+        backgroundColor: color.darkGreen,
         marginTop: 24,
     },
     buttonText: {
-        color: '#fff',
+        color: color.white,
         textAlign: 'center',
         fontSize: 14,
         fontStyle: 'normal',
