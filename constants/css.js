@@ -4,4 +4,5 @@ export const color = {
     black: '#1E2220',
     white: '#fff',
     lightGrey: '#F5F0ED',
+    purple: '#4A00E7',
 };

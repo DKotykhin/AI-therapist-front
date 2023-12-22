@@ -24,7 +24,7 @@ export const Start = ({ navigation }) => {
                 <View style={styles.buttonBox}>
                     <TouchableOpacity
                         style={styles.buttonGreen}
-                        onPress={() => Alert.alert('Press:', 'First button')}
+                        onPress={() => Alert.alert('Warning:', 'Under development...')}
                     >
                         <Svg
                             width='18'

@@ -12,8 +12,12 @@ export const Navigation = () => {
         <NavigationContainer>
             <Stack.Navigator>
                 <Stack.Screen name='Home' component={Home} />
-                <Stack.Screen name='Start' component={Start} />
-                <Stack.Screen name='Chat' component={Chat} />
+                <Stack.Screen
+                    name='Start'
+                    component={Start}
+                    options={{ headerBackVisible: false }}
+                />
+                <Stack.Screen name='Chat' component={Chat} options={{ headerBackVisible: false }} />
             </Stack.Navigator>
         </NavigationContainer>
     );
