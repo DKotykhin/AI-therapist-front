@@ -38,7 +38,10 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: color.lightGrey,
+        // backgroundColor: color.lightGrey,
+        borderRadius: 44,
+        background:
+            'linear-gradient(0deg, rgba(13, 65, 41, 0.00) 0%, rgba(13, 65, 41, 0.00) 100%), #EFECE8',
     },
     title: {
         color: color.black,
@@ -59,7 +62,9 @@ const styles = StyleSheet.create({
         fontFamily: 'Fraunces_600SemiBold',
     },
     image: {
-        height: 400,
+        height: 370,
+        width: 370,
+        marginBottom: 60,
     },
     terms: {
         color: color.black,
