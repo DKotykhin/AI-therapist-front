@@ -67,7 +67,6 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 14,
         fontStyle: 'normal',
-        fontWeight: 500,
         fontFamily: 'Roboto_500Medium',
         marginTop: 72,
     },
@@ -110,7 +109,7 @@ const styles = StyleSheet.create({
     buttonText: {
         color: 'rgba(30, 34, 32, 0.50)',
         fontSize: 12,
-        fontWeight: 600,
+        fontWeight: '600',
         textTransform: 'uppercase',
     },
 });
