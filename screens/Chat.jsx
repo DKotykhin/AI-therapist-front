@@ -69,6 +69,11 @@ export const Chat = ({ navigation }) => {
                         paddingHorizontal: 4,
                         paddingVertical: 3,
                     },
+                    left: {
+                        backgroundColor: color.lightGrey,
+                        paddingHorizontal: 4,
+                        paddingVertical: 3,
+                    }
                 }}
             />
         );
@@ -93,6 +98,10 @@ export const Chat = ({ navigation }) => {
         );
     };
 
+    const renderTime = () => {
+        return null;
+    };
+
     const onClose = () => {
         socket.current.close();
         navigation.navigate('Home');
@@ -114,13 +123,14 @@ export const Chat = ({ navigation }) => {
                     _id: 1,
                 }}
                 messagesContainerStyle={{
-                    backgroundColor: color.white,
+                    backgroundColor: color.lightGrey,
                 }}
                 renderBubble={renderBubble}
                 renderSend={renderSend}
                 // renderInputToolbar={renderInputToolbar}
                 renderFooter={() => messageLoading && <TypingIndicator />}
                 scrollToBottom
+                renderTime={renderTime}
             />
         </View>
     );
@@ -132,16 +142,14 @@ const styles = StyleSheet.create({
     },
     buttonBox: {
         position: 'absolute',
-        top: 16,
+        top: 50,
         right: 16,
-        display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         gap: 8,
         zIndex: 3,
     },
     buttonPurple: {
-        display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         gap: 6,
@@ -155,7 +163,6 @@ const styles = StyleSheet.create({
         marginRight: 15,
     },
     typingIndicator: {
-        display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
         gap: 16,

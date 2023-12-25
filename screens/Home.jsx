@@ -38,10 +38,8 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        // backgroundColor: color.lightGrey,
+        backgroundColor: color.lightGrey,
         borderRadius: 44,
-        background:
-            'linear-gradient(0deg, rgba(13, 65, 41, 0.00) 0%, rgba(13, 65, 41, 0.00) 100%), #EFECE8',
     },
     title: {
         color: color.black,
@@ -51,6 +49,7 @@ const styles = StyleSheet.create({
         fontWeight: 600,
         lineHeight: 40,
         fontFamily: 'Fraunces_600SemiBold',
+        marginTop: 153,
     },
     subtitle: {
         color: color.lightGreen,
@@ -65,6 +64,7 @@ const styles = StyleSheet.create({
         height: 370,
         width: 370,
         marginBottom: 60,
+        flexGrow: 1,
     },
     terms: {
         color: color.black,
@@ -80,13 +80,11 @@ const styles = StyleSheet.create({
         color: color.lightGreen,
         textAlign: 'center',
         fontSize: 14,
-        fontStyle: 'normal',
         fontWeight: 500,
         lineHeight: 22,
         fontFamily: 'Roboto_500Medium',
     },
     button: {
-        display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         gap: 10,
@@ -95,12 +93,12 @@ const styles = StyleSheet.create({
         borderRadius: 40,
         backgroundColor: color.darkGreen,
         marginTop: 24,
+        marginBottom: 49,
     },
     buttonText: {
         color: color.white,
         textAlign: 'center',
         fontSize: 14,
-        fontStyle: 'normal',
         fontWeight: 600,
         textTransform: 'uppercase',
     },

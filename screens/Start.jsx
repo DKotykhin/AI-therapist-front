@@ -60,8 +60,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         borderRadius: 44,
-        background:
-            'linear-gradient(0deg, rgba(13, 65, 41, 0.00) 0%, rgba(13, 65, 41, 0.00) 100%), #EFECE8',
+        backgroundColor: color.lightGrey,
     },
     subtitle: {
         color: 'rgba(30, 34, 32, 0.70)',
@@ -70,7 +69,7 @@ const styles = StyleSheet.create({
         fontStyle: 'normal',
         fontWeight: 500,
         fontFamily: 'Roboto_500Medium',
-        marginTop: 10,
+        marginTop: 72,
     },
     image: {
         height: 370,
@@ -78,7 +77,6 @@ const styles = StyleSheet.create({
         // flexGrow: 1,
     },
     buttonWrapper: {
-        display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
@@ -86,14 +84,12 @@ const styles = StyleSheet.create({
         marginBottom: 50,
     },
     buttonBox: {
-        display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         gap: 8,
         width: 96,
     },
     buttonGreen: {
-        display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         gap: 6,
@@ -103,7 +99,6 @@ const styles = StyleSheet.create({
         backgroundColor: color.darkGreen,
     },
     buttonWhite: {
-        display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         gap: 6,
@@ -115,7 +110,6 @@ const styles = StyleSheet.create({
     buttonText: {
         color: 'rgba(30, 34, 32, 0.50)',
         fontSize: 12,
-        fontStyle: 'normal',
         fontWeight: 600,
         textTransform: 'uppercase',
     },
