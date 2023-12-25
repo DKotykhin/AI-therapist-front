@@ -73,7 +73,7 @@ export const Chat = ({ navigation }) => {
                         backgroundColor: color.lightGrey,
                         paddingHorizontal: 4,
                         paddingVertical: 3,
-                    }
+                    },
                 }}
             />
         );
@@ -107,7 +107,7 @@ export const Chat = ({ navigation }) => {
         navigation.navigate('Home');
     };
 
-    if (chatLoading) return <Loading />;
+    if (chatLoading) return <Loading navigation={navigation} />;
 
     return (
         <View style={styles.container}>
